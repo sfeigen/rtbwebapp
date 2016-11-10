@@ -6,12 +6,12 @@ import (
 	"runtime"
 
 	"encoding/json"
-	"vendor/shared/database"
-	"vendor/shared/email"
-	"vendor/shared/recaptcha"
-	"vendor/shared/server"
-	"vendor/shared/session"
-	"vendor/shared/view"
+	"app/shared/database"
+	"app/shared/email"
+	"app/shared/recaptcha"
+	"app/shared/server"
+	"app/shared/session"
+	"app/shared/view"
 )
 
 func init() {
