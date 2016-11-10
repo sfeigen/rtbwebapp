@@ -6,12 +6,15 @@ import (
 	"runtime"
 
 	"encoding/json"
+	"app/route"
 	"app/shared/database"
 	"app/shared/email"
+	"app/shared/jsonconfig"
 	"app/shared/recaptcha"
 	"app/shared/server"
 	"app/shared/session"
 	"app/shared/view"
+	"app/shared/view/plugin"
 )
 
 func init() {
