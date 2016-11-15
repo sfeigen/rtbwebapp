@@ -5,7 +5,6 @@ import (
 	"os"
 	"runtime"
 
-	"encoding/json"
 	"app/route"
 	"app/shared/database"
 	"app/shared/email"
@@ -15,6 +14,7 @@ import (
 	"app/shared/session"
 	"app/shared/view"
 	"app/shared/view/plugin"
+	"encoding/json"
 )
 
 func init() {
