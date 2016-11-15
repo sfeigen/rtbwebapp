@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
 	"os"
 	"runtime"
@@ -14,7 +15,6 @@ import (
 	"app/shared/session"
 	"app/shared/view"
 	"app/shared/view/plugin"
-	"encoding/json"
 )
 
 func init() {
