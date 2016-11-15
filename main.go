@@ -6,15 +6,15 @@ import (
 	"os"
 	"runtime"
 
-	"vendor/app/shared/view/plugin"
-	"vendor/route"
-	"vendor/shared/database"
-	"vendor/shared/email"
-	"vendor/shared/jsonconfig"
-	"vendor/shared/recaptcha"
-	"vendor/shared/server"
-	"vendor/shared/session"
-	"vendor/shared/view"
+	"app/route"
+	"app/shared/database"
+	"app/shared/email"
+	"app/shared/jsonconfig"
+	"app/shared/recaptcha"
+	"app/shared/server"
+	"app/shared/session"
+	"app/shared/view"
+	"app/shared/view/plugin"
 )
 
 func init() {
