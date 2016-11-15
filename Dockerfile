@@ -1,6 +1,7 @@
 FROM golang:1.7.1
 
 RUN mkdir /app
+COPY bin/app /app/bin
 
 ADD . /app/gowebapp
 
