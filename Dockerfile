@@ -1,7 +1,6 @@
 FROM golang:1.7.1
 
 RUN mkdir /app
-COPY bin/app /app/bin
 
 ADD . /app/gowebapp
 
@@ -16,12 +15,12 @@ go get github.com/justinas/alice && \
 go get github.com/mattn/go-sqlite3 && \
 go get golang.org/x/crypto/bcrypt
 
-ADD vendor/controller /app/controller
-ADD vendor/model /app/model
-ADD vendor/route /app/route
-ADD vendor/shared /app/shared
+ADD vendor/controller /usr/local/golang/1.7.1/go/src/controller
+ADD vendor/model /usr/local/golang/1.7.1/go/src/model
+ADD vendor/route /usr/local/golang/1.7.1/go/src/route
+ADD vendor/shared /usr/local/golang/1.7.1/go/src/shared
 
-WORKDIR /appRoot
+WORKDIR /app
 
 EXPOSE 80
 
